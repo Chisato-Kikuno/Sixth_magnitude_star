@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+
+/* common */
+html {
+  font-size: 100%;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* line-height: 2; */
+  color: #fff;
+}
+
+main {
+  text-align: center;
+  background: linear-gradient(rgb(22, 35, 71), #080b16);
+  padding-bottom: 1rem;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+small {
+  display: inline-block;
+}
+
+:target {
+  scroll-margin-top: 80px;
+}
+
+
+/* header */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  line-height: normal;
+  height: 70px;
+}
+
+nav {
+  height: 100%;
+  color: #080b16;
+  display: flex;
+  align-items: center;
+}
+
+.top_icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.3rem;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+.nav_top {
+  flex-grow: 10;
+}
+
+.nav_menu {
+  flex-grow: 1;
+}
+
+.nav_accsess {
+  flex-grow: 1;
+}
+
+/* main */
+/* Top */
+.title {
+  font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  background-image: url("../images/beans.jpg");
+  background-size: cover;
+  min-height: 400px;
+  color: black;
+}
+
+.img_transparent {
+  background: rgba(255,255,255,0.3);
+  background-size: cover;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top_img {
+  width: 10rem;
+  height: 10rem;
+}
+
+h1, .top_img {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.top {
+  margin-top: 2rem;
+}
+
+dt {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+dd {
+  margin: 1rem;
+}
+
+.seat_img {
+  width: 100%;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.seat_img img {
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+/* Menu */
+h2 {
+  text-decoration: underline overline #fff;
+  margin-top: 3rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+ul {
+  padding: 0;
+}
+
+#menu li {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.drink, .food, .sweets {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#menu img {
+  border-radius: 30px;
+}
+
+.drink_img {
+  height: 400px;
+}
+
+.food_img {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.rectangle_img1 {
+  max-width: 300px;
+}
+
+.rectangle_img2 {
+  max-width: 200px;
+}
+
+.sweets_img1 {
+  max-width: 400px;
+}
+
+.sweets_img2 {
+  display: none;
+}
+
+#menu small {
+  margin-top: 2rem;
+}
+
+/*Access*/
+#access img {
+  margin: 2rem auto 0;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+#access a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: solid;
+}
+
+#access p {
+  margin-top: 0.5rem;
+}
+
+#access small {
+  margin-top: 2rem;
+}
+
+/* footer */
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.sns {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/*メディアクリ対応*/
+@media(max-width: 992px) {
+  body {
+    width: auto;
+  }
+
+  .title, .img_transparent{
+    min-height: 300px;
+  }
+
+  .seat_img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .seat_img img {
+    margin: 1.5rem;
+    width: 350px;
+    min-width: 200px;
+  }
+
+  .drink_img {
+    height: 200px;
+  }
+
+  .drink, .food, .sweets {
+    margin-top: 1rem;
+  }
+
+  .rectangle_img1 {
+    display: none;
+  }
+
+  .rectangle_img2 {
+    height: 200px;
+  }
+
+  .sweets_img1 {
+    width: 200px;
+  }
+
+  #access img {
+    max-width: 400px;
+}
+}
+
+@media(max-width: 576px) {
+  body {
+    width: auto;
+  }
+
+  .title, .img_transparent{
+    min-height: 200px;
+  }
+
+  .top_img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .seat_img {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .seat_img img {
+    max-width: 330px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  dt {
+  font-size: 1rem;
+
+}
+  .drink, .food, .sweets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .drink_img {
+    height: 200px;
+  }
+
+  .rectangle_img1 {
+    display: block;
+    height: 150px;
+  }
+
+  .rectangle_img2 {
+    height: 150px;
+  }
+
+  .sweets_img {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .sweets_img2 {
+    display: block;
+    height: 150px;
+  }
+
+  #access img {
+    max-width: 300px;
+}
+}
